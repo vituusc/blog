@@ -1,0 +1,114 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+    background: linear-gradient(135deg, #0b6623, #1e4d2b);
+    color: #ffffff;
+    padding: 40px 0;
+    border-bottom: 5px solid #2ecc71;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.header .tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #a8e6cf;
+    margin-bottom: 20px;
+}
+
+.header .intro {
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.post {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.post h2 {
+    color: #0b6623;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 8px;
+}
+
+.post p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Botão de Curtida */
+.like-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.like-btn {
+    background-color: #ffffff;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.like-btn:hover {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+/* Estilo de quando estiver curtido */
+.like-btn.liked {
+    background-color: #2ecc71;
+    color: #ffffff;
+    border-color: #2ecc71;
+}
+
+.like-count {
+    font-size: 1rem;
+    color: #555;
+}
