@@ -1,72 +1,175 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Na Trave e No Gol</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLUBE DOS CAMINHÕES ARQUEADOS DO BRASIL</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: white;
+    }
+
+    header {
+      background: linear-gradient(90deg, #ff0000, #ff7300);
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px;
+      border-bottom: 2px solid #ff7300;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff7300;
+      transform: scale(1.1);
+    }
+
+    main {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    main h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      color: #ff7300;
+    }
+
+    main p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 0;
+      border: 1px solid #333;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+   
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #ff7300;
+      box-shadow: 0 5px 15px rgba(255, 115, 0, 0.3);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+   
+    .card-content {
+      padding: 20px;
+    }
+   
+    .card h3 {
+      color: #ff7300;
+      margin-bottom: 10px;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      background: #1a1a1a;
+      text-align: center;
+      padding: 20px;
+      margin-top: 60px;
+      border-top: 2px solid #ff7300;
+    }
+   
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.8rem; }
+      nav { gap: 15px; }
+    }
+  </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="container">
-            <h1>Na Trave e No Gol</h1>
-            <p class="tagline">Onde o futebol é debatido de verdade.</p>
-            <p class="intro">
-                A bola está rolando na maior Copa do Mundo da história! Pela primeira vez com 48 seleções, o megaevento sediado por Estados Unidos, México e Canadá já completou suas duas primeiras rodadas da fase de grupos. Se você piscou, perdeu recordes históricos, tempestades adiando jogo e gigante carimbando vaga no mata-mata.
-                Aqui no <strong>Na Trave e No Gol</strong>, nós separamos os fatos mais marcantes do torneio até o fim. Chega mais!
-            </p>
+  <header>
+    <h1>CLUBE DOS BRUTOS ARQUEADOS DO BRASIL</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#videos">Vídeos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <h2>Bem-vindo ao mundo dos BRUTOS</h2>
+    <p>Aqui você encontra as melhores fotos e vídeos de caminhões arqueados do Brasil, com o engenheiro Paes.</p>
+   
+    <div class="galeria">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbnQPeRdCmwLiW_rmX8G3VssbZbZLUkOJBf9gYlMzEFQ-mdUbBgcNoaVE&s=10" alt="Scania V8 arqueada na cor vermelha">
+        <div class="card-content">
+          <h3>Scania Arqueada</h3>
+          <p>Os brutos mais insanos da estrada</p>
         </div>
-    </header>
+      </div>
+      <div class="card">
+        <img src="https://cdn.awsli.com.br/800x800/138/138431/produto/8125244/4328bd63a4.jpg" alt="Volvo FH branco arqueado">
+        <div class="card-content">
+          <h3>Volvo FH Arqueado</h3>
+          <p>Potência e estilo no grau</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_737186-MLB88117838181_072025-O.webp" alt="Encontro de caminhões arqueados">
+        <div class="card-content">
+          <h3>Eventos</h3>
+          <p>Cobertura dos maiores encontros</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-    <main class="main-content container">
-        <article class="post">
-            <h2>Então vamos conversar</h2>
-            
-            <img src="2f3b607f2525dd613034cd05ef8f53bc.jpg" alt="Estádio de futebol lotado" class="post-image">
+  <footer>
+    <p>&copy; PATROCÍNIO MOLAS E SUSPENSÃO DUDU</p>
+  </footer>
 
-            <p>
-                A Copa do Mundo FIFA de 2026 marcou uma mudança profunda no maior torneio de futebol do planeta, trazendo o maior formato da história da competição e uma estrutura compartilhada inédita.
-            </p>
-            <p>
-                A principal alteração esteve na expansão do número de participantes. Nas edições anteriores, a competição contava com 32 seleções divididas em oito grupos. Em 2026, o torneio passou a reunir 48 países, organizados em doze grupos de quatro equipes. Com essa mudança, avançaram para o mata-mata os dois melhores de cada grupo e também os oito melhores terceiros colocados. Isso exigiu uma etapa eliminatória a mais antes das oitavas de final, chamada de dezesseis-avos de final, fazendo com que o total de partidas saltasse de 64 para 104 jogos ao longo da competição.
-            </p>
-            <p>
-                Outro ponto marcante foi a realização conjunta por três nações: Canadá, Estados Unidos e México. A logística envolveu 16 cidades-sede espalhadas pela América do Norte, combinando a tradição de palcos históricos com arenas de altíssima tecnologia. O Estádio Azteca, na Cidade do México, fez história ao se tornar o primeiro a receber jogos em três edições de Copa do Mundo, enquanto a grande final teve como palco o MetLife Stadium, na região metropolitana de Nova York.
-            </p>
-            <p>
-                A grande final coroou a Espanha como a grande campeã da Copa do Mundo de 2026. A seleção espanhola conquistou seu bicampeonato mundial ao vencer a Argentina por 1 a 0, com um gol marcado por Ferran Torres durante a prorrogação. O pódio da competição terminou com a Argentina em segundo lugar e a Inglaterra na terceira posição.
-            </p>
-
-            <div class="like-section">
-                <button id="likeBtn" class="like-btn">
-                    <span class="icon">👍</span> Curtir
-                </button>
-                <span class="like-count"><strong id="count">0</strong> curtidas</span>
-            </div>
-        </article>
-    </main>
-
-    <script>
-        const likeBtn = document.getElementById('likeBtn');
-        const countElement = document.getElementById('count');
-        
-        let isLiked = false;
-        let likesCount = 0;
-
-        likeBtn.addEventListener('click', () => {
-            if (!isLiked) {
-                likesCount++;
-                isLiked = true;
-                likeBtn.classList.add('liked');
-            } else {
-                likesCount--;
-                isLiked = false;
-                likeBtn.classList.remove('liked');
-            }
-            countElement.textContent = likesCount;
-        });
-    </script>
 </body>
 </html>
-Dica: Coloquei um link direto para uma imagem de futebol no atributo src. Se quiser usar uma foto do seu próprio computador, basta alterar para o nome do seu arquivo (exemplo: src="minha-foto.jpg").
